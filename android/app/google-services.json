@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "980300329922",
+    "project_id": "kick-f28f0",
+    "storage_bucket": "kick-f28f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980300329922:android:7e3f4bb1ce3cd447999c5b",
+        "android_client_info": {
+          "package_name": "com.example.kickgooglesignin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980300329922-jttctqv185k7a0t5pbkuikkkfp888s5k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8-hrFOF7hMlnPHT2A1qmO4z9kqQW4t5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980300329922-jttctqv185k7a0t5pbkuikkkfp888s5k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
