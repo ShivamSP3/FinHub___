@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:todo_app/Tabs/Charting.dart';
 import 'package:todo_app/Tabs/analysis.dart';
@@ -11,19 +13,20 @@ class ChartPage extends StatelessWidget {
     child: Scaffold(
       // ignore: prefer_const_literals_to_create_immutables
       body: Column(children: [
-        TabBar(tabs: [
-          Tab(
-            icon:Icon (Icons.candlestick_chart,color: Colors.deepPurple)
-          ),
-          Tab(
-            icon:Icon (Icons.analytics,color: Colors.deepPurple)
-          )
-        ]),
+        // TabBar(tabs: [
+        //   Tab(
+        //     icon:Icon (Icons.candlestick_chart,color: Colors.deepPurple)
+        //   ),
+        //   // Tab(
+        //   //   icon:Icon (Icons.analytics,color: Colors.deepPurple)
+        //   // )
+        // ]),
+        // ignore: prefer_const_constructors
         Expanded(
           // ignore: prefer_const_constructors
           child: TabBarView(children: [
             Charting(),
-            Analysis()
+   //         Analysis()
           ],
           ),
         )

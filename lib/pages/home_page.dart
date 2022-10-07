@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/Sections/chart&analysis.dart';
 import 'package:todo_app/Sections/news.dart';
+import 'package:todo_app/Sections/portfolio.dart';
+import 'package:todo_app/Sections/watchlist.dart';
+
+import '../Sections/profile.dart';
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -15,23 +19,24 @@ class _HomePageState extends State<HomePage> {
   int _currentIndex = 0;
   List<Widget> pages = const[
 
-    Text('WatchList',style: _textStyle,),
+      WatchList(),
       ChartPage(),
-    // Text('Chart&Analysis',style: _textStyle,),
-      Text('Portfolio',style: _textStyle,),
+      PortFolio(),
       News(),
-        Text('profile',style: _textStyle,)
+      Profile(),
+    
   ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-         appBar: AppBar(
-          centerTitle: true,toolbarHeight:70,backgroundColor: Colors.white,
-          title : const Text('FinHub',style: TextStyle(color: Colors.black,fontSize: 35,fontWeight: FontWeight.bold),),
-         ),
+        //  appBar: AppBar(
+        //   centerTitle: true,toolbarHeight:60,backgroundColor: Colors.white,
+        //   title : const Text('FinHub',style: TextStyle(color: Colors.black,fontSize: 35,fontWeight: FontWeight.bold,),),
+        //  ),
        body: Center(child: pages[_currentIndex]),
       
        bottomNavigationBar: NavigationBar(
+        height: 60,
         animationDuration: Duration(seconds: 1),
         labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
         selectedIndex: _currentIndex,
@@ -48,7 +53,7 @@ class _HomePageState extends State<HomePage> {
           ),
           const NavigationDestination(
             selectedIcon: Icon(Icons.candlestick_chart),
-            icon: Icon(Icons.candlestick_chart), label: 'Chart&Analysis'
+            icon: Icon(Icons.candlestick_chart), label: 'Chart'
           ),
           const NavigationDestination(
             selectedIcon: Icon(Icons.next_week),
